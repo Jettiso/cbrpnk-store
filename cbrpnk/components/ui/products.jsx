@@ -1,23 +1,10 @@
 import React from "react";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const page = () => {
+const Products = () => {
 	return (
-		<div>
-			<div className='w-full flex justify-between p-5'>
-				<span className='text-lg'>SHOP / CATEGORY</span>
-				<Select>
-					<SelectTrigger className='w-[180px]'>
-						<SelectValue placeholder='$ Price Filter' />
-					</SelectTrigger>
-					<SelectContent>
-						<SelectItem value='light'>Low to High</SelectItem>
-						<SelectItem value='dark'>High to Low</SelectItem>
-					</SelectContent>
-				</Select>
-			</div>
+		<>
 			<main className='flex justify-between p-6'>
 				<aside className='w-64'>
 					<Accordion type='single' collapsible className='w-full'>
@@ -102,8 +89,8 @@ const page = () => {
 					</Card>
 				</section>
 			</main>
-		</div>
+		</>
 	);
 };
 
-export default page;
+export default Products;
